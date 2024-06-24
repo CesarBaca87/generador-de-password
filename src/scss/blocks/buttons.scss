@@ -1,0 +1,18 @@
+.button {
+    height: 60px;
+    width: 100%;
+    border: none;
+    color: inherit;
+    background-color: var(--cta-color);
+    box-shadow: 0 4px 4px var(--primary-shadow);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+    transform: scale(0.95);
+    background-color: var(--cta-color-hover);
+}

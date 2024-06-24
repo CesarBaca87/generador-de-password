@@ -2,4 +2,7 @@
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
 @use 'blocks/body.scss';
-@use 'blocks/cards.scss';
+@use 'blocks/main.scss';
+@use 'blocks/password.scss';
+@use 'blocks/buttons.scss';
+@use 'blocks/range.scss';

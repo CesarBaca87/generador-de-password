@@ -2,21 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/password-icon.svg" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Generador de Password</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="title">Titulo Principal</h1>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis
-        eos magnam earum numquam dignissimos eveniet asperiores a, minus neque
-        quibusdam odio est in eaque tempora consequatur veniam similique libero?
-      </p>
-      <a class="card__button" href="#">Pincha aquí</a>
+    <div class="password-generator">
+      <input type="text" class="password" id="password" placeholder="P4$5W0RD!" readonly />
+      <div>
+        <label for="range" class="range-label">LENGTH: <span id="length-text">16</span></label>
+      </div>
+      <div class="range-container">
+        <span>4</span>
+        <input id="range" type="range" class="range-input" min="4" max="32" step="1" value="16" />
+        <span>32</span>
+      </div>
+      <button id="generate-password" class="button">Generate Password</button>
     </div>
     <script type="module" src="./js/index.js"></script>
   </body>
